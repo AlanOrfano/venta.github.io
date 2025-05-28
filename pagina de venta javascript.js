@@ -6,9 +6,10 @@ function enviar()
     var email= document.getElementById("email") .value;
     var asunto= document.getElementById("asunto") .value;
     var mensaje= document.getElementById("mensaje") .value;
+    var mensaje= document.getElementById("cap") .value;
 
     if (
-        !nombre || !email || !asunto || !mensaje
+        !nombre || !email || !asunto || !mensaje || !cap
         )
         {
             alert ("complete los datos")
