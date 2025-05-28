@@ -6,10 +6,10 @@ function enviar()
     var email= document.getElementById("email") .value;
     var asunto= document.getElementById("asunto") .value;
     var mensaje= document.getElementById("mensaje") .value;
-    var cap= document.getElementById("cap") .value;
-    console.log(cap);
+    const recaptchaResponse = grecaptcha.getResponse();
+    console.log(recaptchaResponse);
     if (
-        !nombre || !email || !asunto || !mensaje || !cap
+        !nombre || !email || !asunto || !mensaje || !recarpchaResponse
         )
         {
             alert ("complete los datos")
