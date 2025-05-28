@@ -9,7 +9,7 @@ function enviar()
     const recaptchaResponse = grecaptcha.getResponse();
     
     if (
-        !nombre || !email || !asunto || !mensaje || !recarpchaResponse
+        !nombre || !email || !asunto || !mensaje || recarpchaResponse === ""
         )
         {
             alert ("complete los datos")
