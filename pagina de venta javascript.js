@@ -7,7 +7,7 @@ function enviar()
     var asunto= document.getElementById("asunto") .value;
     var mensaje= document.getElementById("mensaje") .value;
     const recaptchaResponse = grecaptcha.getResponse();
-    console.log(recaptchaResponse);
+    
     if (
         !nombre || !email || !asunto || !mensaje || !recarpchaResponse
         )
