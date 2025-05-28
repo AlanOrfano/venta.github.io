@@ -1,0 +1,34 @@
+#paginaP{
+    background-image: url(PC-Gamer-Completo-Intel-Core-I5-16GB-RAM-SSD-1TB-Windows-10-Kit-Gamer-Com-Monitor-20-Polegadas_1700488694_gg.webp);
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-color: gray;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    
+}
+#consultas{
+    background-color: gray;
+    text-align: center;
+}
+
+footer{
+position: fixed;
+    bottom: 0;
+    
+}
+
+#formulario{
+    text-align: center;
+}
+
+#body{
+    background-color: gray;
+}
+
+#cap{
+    text-align: center;
+}
