@@ -7,10 +7,10 @@ function confirmar()
     var asunto= document.getElementById("asunto") .value;
     var mensaje= document.getElementById("mensaje") .value;
     const btn = document.getElementById('boton'); 
-    const recaptchaResponse= grecaptcha.getResponse() .value;
+    const recaptchaResponse= grecaptcha.getResponse() ;
 
     if (
-        !nombre || !email || !asunto || !mensaje || !recarptchaResponse === ""
+        !nombre || !email || !asunto || !mensaje || recarptchaResponse === ""
         )
         {
             alert ("complete los datos")
