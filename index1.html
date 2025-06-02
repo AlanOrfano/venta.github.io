@@ -87,7 +87,7 @@ document.getElementById('form')
     const recaptchaResponse= grecaptcha.getResponse() ;
 
     if (
-        !nombre || !email || !asunto || !mensaje || recarptchaResponse === ""
+        !nombre || !email || !asunto || !mensaje || recaptchaResponse === ""
         )
         {
             alert ("complete los datos")
