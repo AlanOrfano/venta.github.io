@@ -48,7 +48,7 @@
                 
                 <!--<p class="acciones"><input type="submit" value="enviar" onclick="enviar()"  /></p>-->
 
-            <button onclick= "confirmar()" id="boton" value="Send Email" >confirmar</button>
+            <input type="submit" id="boton">  
             
             </form>
            
@@ -71,6 +71,16 @@
 function confirmar()
 {
   
+   
+    
+   
+                      
+                    
+        
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
     var nombre= document.getElementById("nombre") .value;
     var email= document.getElementById("email") .value;
     var asunto= document.getElementById("asunto") .value;
@@ -85,23 +95,6 @@ function confirmar()
             alert ("complete los datos")
             
         }
-    
-    else 
-    {   var usuario=
-        {
-        nombre: nombre ,
-        email: email ,
-        asunto: asunto ,
-        mensaje: mensaje 
-                         } ;
-       // envia al emailjs //
-                      
-                    
-        
-
-document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
 
    
 
