@@ -114,6 +114,14 @@ document.getElementById('form')
       alert(JSON.stringify(err));
       alert ("ponga un email correcto")
     });
+
+     const formdata= new formData(form);
+     const script= "https://script.google.com/macros/s/AKfycbz1MWhmkYkz36cCJGO5kPKBV0ve_jEmrt0lFfSHGaFJGEeh1WvNNL6r-hmd-RcH8UA_/exec"
+     fetch(script, {
+         method:"POST",
+         body: formData,
+         mode: "no-cors"
+     });
 });
 
 
